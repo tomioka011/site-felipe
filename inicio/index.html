@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedido Especial</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: #fde6e6; /* Cor de fundo rosa claro */
+        margin: 0;
+        padding: 0;
+    }
+    .conteudo {
+        background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente branco */
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+    .conteudo label {
+        font-size: 24px;
+        color: #333; /* Cor do texto */
+    }
+    .conteudo input[type="text"] {
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 2px solid #FF69B4; /* Cor da borda rosa */
+        margin-top: 10px;
+    }
+    .conteudo button {
+        padding: 12px 24px;
+        font-size: 20px;
+        background-color: #FF69B4; /* Cor de fundo rosa */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s; /* Efeito de transição suave */
+    }
+    .conteudo button:hover {
+        background-color: #FF1493; /* Cor de fundo rosa mais escura ao passar o mouse */
+    }
+    .coracoes {
+        font-size: 48px; /* Tamanho dos corações */
+        color: #FF69B4; /* Cor rosa */
+    }
+    #frase {
+        font-size: 30px; /* Tamanho da frase */
+        color: #FF69B4; /* Cor rosa */
+        margin-top: 20px;
+    }
+    #mensagemEspecial {
+        font-size: 24px;
+        margin-top: 30px;
+        color: #333; /* Cor do texto */
+    }
+    #linkYoutube {
+        font-size: 20px;
+        margin-top: 10px;
+        color: #FF69B4; /* Cor rosa */
+        text-decoration: none; /* Remover sublinhado do link */
+    }
+    #linkYoutube:hover {
+        text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+    }
+</style>
+</head>
+<body>
+
+<div class="conteudo" id="login">
+    <label for="nome">Digite o que vc pra mim por obsequio:</label><br>
+    <input type="text" id="nome" placeholder="Nome"><br>
+    <button onclick="verificarNome()">Vamos lá!</button>
+</div>
+
+<div class="conteudo" id="conteudo" style="display: none;">
+    <span class="coracoes">&#10084;&#65039;&#10084;&#65039;&#10084;&#65039;</span>
+    <h2 id="frase">final de semana rola cuzinho amor...</h2>
+    <p>Por favor, escolha uma opção:</p>
+    <button onclick="escolhaSim()">Sim, obvio amor </button>
+    <button onclick="naoFazerNada()">Não, nunca poderia recusar!</button>
+    <p id="mensagemEspecial" style="display:none;">Aguardo pelo final de semana minha cenourinha <a id="linkYoutube" href="https://youtu.be/pZZDL3aziWw?si=unvQLcruLivPfUQE" target="_blank">Assista este vídeo e saiba o quanto você é especial para mim</a>.</p>
+</div>
+
+<script>
+function verificarNome() {
+    var nomeDigitado = document.getElementById("nome").value.trim();
+    var nomeCorreto = "Amor"; // Nome correto: "Amor"
+
+    if (nomeDigitado.toLowerCase() === nomeCorreto.toLowerCase()) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("conteudo").style.display = "block";
+    } else {
+        alert("Apenas meu amor, digite 'Amor'.");
+    }
+}
+
+function escolhaSim() {
+    // Exibir mensagem especial
+    document.getElementById("mensagemEspecial").style.display = "block";
+}
+
+function naoFazerNada() {
+    // Não faz nada, apenas mantém a página como está
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #FFC0CB; /* Cor de fundo rosa */
+        margin: 0;
+        padding: 0;
+    }
+    .conteudo {
+        background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente branco */
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+    .conteudo label {
+        font-size: 20px;
+        color: #333; /* Cor do texto */
+    }
+    .conteudo input[type="text"] {
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+    }
+    .conteudo button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #FF69B4; /* Cor de fundo rosa */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s; /* Efeito de transição suave */
+    }
+    .conteudo button:hover {
+        background-color: #FF1493; /* Cor de fundo rosa mais escura ao passar o mouse */
+    }
+    .coracoes {
+        font-size: 48px; /* Tamanho dos corações */
+        color: #FF69B4; /* Cor rosa */
+    }
+    #frase {
+        font-size: 24px; /* Tamanho da frase */
+        color: #FF69B4; /* Cor rosa */
+    }
+    #mensagemEspecial {
+        font-size: 18px;
+        margin-top: 20px;
+        color: #333; /* Cor do texto */
+    }
+    #linkYoutube {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #FF69B4; /* Cor rosa */
+        text-decoration: none; /* Remover sublinhado do link */
+    }
+    #linkYoutube:hover {
+        text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+    }
+</style>
